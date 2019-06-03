@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+<!--Meta description er det som google vil vise ved søgninger og bruges til SEO optimering-->
+<meta name="description" content="Er du glad cocktails? På denne siden kan du finde oplysninger om forskellige cocktails. Du kan se ingredienslister, forskellige fremgangsmåder og videoer til forskellige cocktails.">	
+<meta charset="UTF-8">
+<title>Kontakt</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">	
+<link href="stylesheetweb.css" rel="stylesheet" media="screen and (min-width: 800px)">
+<link href="stylesheetmobil.css" rel="stylesheet" media="screen and (max-width: 800px)">
+<meta name="google-site-verification" content="XwEjgxk_oez9uQdh4bH8mDnI5_7U4g2Q_fYB9yBSLZQ" />
+<link rel="stylesheet" href="https://use.typekit.net/glf5rza.css">	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<meta charset="utf-8">
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>	
+  </head>
+<body>
+<!--navigationen -->
+<div class="containe">
+	<nav>
+    	<input type="checkbox" id="nav" class="hidden">
+         <label for="nav" class="nav-btn">
+         	<i></i>
+            <i></i>
+            <i></i>
+         </label>
+         	<div class="logo">
+				<a href="index.html">
+                	<img class="cocktailslogo" src="img/logo.png" alt="Logo">
+				</a> 
+            </div>
+            	<div class="nav-wrapper">
+                	<ul>
+                    	<li><a href="index.html">Hjem</a></li>
+                      	<li><a href="drinks.html">Drinks</a></li>
+                        <li><a class="current" href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+	</nav>
+</div>	
+
+	
+<!--billedet i toppen med parallex effect -->	
+	
+	<div class="pimg1">
+		<div class="ptext">
+			<span class="border">
+				Kontankt os
+			</span>
+		</div>
+	</div>
+	
+	
+	
+<!--kontakt form -->	
+	
+	<h2 class="kontakth2">Kontakt os her!</h2>
+	
+	<div class="contain">
+  <form action="mailto:sweetbot@sweetbot.dk" method="post" enctype="text/plain">
+
+    <label class="tekst" for="navn">Navn</label>
+    <input type="text" id="navn" name="navn" placeholder="Dit navn...">
+
+ 
+
+ 
+
+ 
+	  
+	<label class="tekst" for="telefon">Telefonnummer</label>
+    <input type="text" id="telefon" name="telefon" placeholder="Skriv dit telefonnummer her...">
+	
+	<label class="tekst" for="email">E-mail</label>
+    <input type="text" id="email" name="email" placeholder="Skriv din e-mail her...">
+	     <label class="tekst" for="besked">Besked</label>
+    <textarea id="besked" name="besked" placeholder="Skriv din besked til os her..." style="height:200px"></textarea>
+    <input class="send" type="submit" value="Send besked">
+
+  </form>	  
+
+</div>
+
+	<div class="main" id="section2">
+  
+ 				<a href="#nav"><button><i class="up"></i></button></a>
+			</div>	
+	
+	
+<!--Footer -->	
+<footer>
+	<div class="foot">
+		<h4>Swizzle.dk</h4>
+		<img class="logofoot" src="img/logo.png" alt="logo">
+		<p>copyright Drinks.dk 2019</p>
+		<p>Nørgaardsvej 30, 2800 Kongens Lyngby</p>
+		<h5>Kontakt: <a href="#">Swizzle@hotmail.com</a></h5>
+		<a href="#"><img src="img/facebook.png" alt="face"></a>
+		<a href="https://www.instagram.com/swizzledrinks/?fbclid=IwAR1_C-R3mcl5DoCN2SOazw-gC_F6SJkLVBVWFI60cCbBCkYMwgLwjA9yCZo" target="_blank"><img src="img/insta.png" alt="insta"></a>
+	</div>
+	
+</footer>	
+	
+</body>
+</html>

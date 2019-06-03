@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+<head>
+<!--Meta description er det som google vil vise ved søgninger og bruges til SEO optimering-->
+<meta name="description" content="Er du glad cocktails? På denne siden kan du finde oplysninger om forskellige cocktails. Du kan se ingredienslister, forskellige fremgangsmåder og videoer til forskellige cocktails.">	
+<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">	
+<link href="stylesheetweb.css" rel="stylesheet" media="screen and (min-width: 800px)">
+<link href="stylesheetmobil.css" rel="stylesheet" media="screen and (max-width: 800px)">
+<meta name="google-site-verification" content="XwEjgxk_oez9uQdh4bH8mDnI5_7U4g2Q_fYB9yBSLZQ" />
+<link rel="stylesheet" href="https://use.typekit.net/glf5rza.css">	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	
+<meta charset="utf-8">
+<title>Gin</title>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>	
+</head>
+
+<!--navigationen -->
+<div class="containe">
+	<nav>
+    	<input type="checkbox" id="nav" class="hidden">
+         <label for="nav" class="nav-btn">
+         	<i></i>
+            <i></i>
+            <i></i>
+         </label>
+         	<div class="logo">
+				<a href="index.html">
+                	<img class="cocktailslogo" src="img/logo.png" alt="Logo">
+				</a> 
+            </div>
+            	<div class="nav-wrapper">
+                	<ul>
+                    	<li><a href="index.html">Hjem</a></li>
+                      	<li><a class="current" href="drinks.html">Drinks</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+	</nav>
+</div>
+	
+	
+<!--billedet + tekst om cocktails -->	
+<div class="pimg1">
+	<div class="ptext">
+		<span class="border">
+			Gin
+		</span>
+	</div>
+</div>
+	
+	<section class="section section-light">
+	</section>	
+	
+	
+	
+<!--Drinks -->	
+	
+	<div class="drinks">
+		<div class="drinks-grid">
+			<div class="box">
+				<img src="img/cs3.jpg" alt="mojito">
+			</div>	
+			<div class="box">
+				<li>CL Hendrick’s Gin - 2 CL</li>
+				<li>Lemon sodavand - 10 CL</li>
+				<li>Mango sirup - 2 CL</li>
+				
+			</div>	
+			<div class="box1">
+				<h4>Tilberedning</h4>
+				
+				
+				<p>Fyld dit glas med isterninger. Derefter tilsæt Hendrick’s Gin og Lemon Sodavand, top op til sidst med Mango Sirup.
+				Du kan evt pynte med en Lime skal eller Mynte
+				</p>
+			</div>	
+		</div>
+	
+	</div>
+	<div class="video">
+		<h3>Video kommer snart...</h3>
+	</div>
+
+	
+	
+	<div class="flere">
+		<h2>Se også...</h2>
+	</div>
+	
+<div class="feed">
+	
+	<div class="grid-feed">
+	  <img src="img/daiquiri2.jpg" alt="drink">
+	  <h3>Strawberry daiquiri</h3>
+	  <p>Let mojito med mynte, lime sukker og knust is. Perfekt til en varm sommerdag</p>
+	  <a href="daiquiri.html"><button class="button-feed">Læs mere</button></a>
+		
+	</div>
+	<div class="grid-feed">
+	  <img src="img/filur2.JPG" alt="drink">
+	  <h3>filur</h3>
+	  <p>Let mojito med mynte, lime sukker og knust is. Perfekt til en varm sommerdag</p>
+		<a href="filur.html"><button class="button-feed">Læs mere</button></a>	
+		
+	</div>	
+	
+	<div class="grid-feed">
+	  <img src="img/colada2.JPG" alt="drink">
+	  <h3>pina colada</h3>
+	  <p>Let mojito med mynte, lime sukker og knust is. Perfekt til en varm sommerdag</p>
+		<a href="colada.html"><button class="button-feed">Læs mere</button></a>
+	</div>	
+</div>
+	<div class="main" id="section2">
+  
+ 				<a href="#nav"><button><i class="up"></i></button></a>
+			</div>	
+
+	
+	
+<footer>
+	<div class="foot">
+		<h4>Swizzle.dk</h4>
+		<img class="logofoot" src="img/logo.png" alt="logo">
+		<p>copyright Drinks.dk 2019</p>
+		<p>Nørgaardsvej 30, 2800 Kongens Lyngby</p>
+		<h5>Kontakt: <a href="#">Swizzle@hotmail.com</a></h5>
+		<a href="#"><img src="img/facebook.png" alt="face"></a>
+		<a href="https://www.instagram.com/swizzledrinks/?fbclid=IwAR1_C-R3mcl5DoCN2SOazw-gC_F6SJkLVBVWFI60cCbBCkYMwgLwjA9yCZo" target="_blank"><img src="img/insta.png" alt="insta"></a>
+	</div>
+	
+</footer>	
+<body>
+</body>
+</html>
